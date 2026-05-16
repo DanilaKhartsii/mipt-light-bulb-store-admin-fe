@@ -1,0 +1,113 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filterLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.filterSelect {
+  padding: 8px 12px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+  color: var(--gray-900);
+  background: var(--white);
+  cursor: pointer;
+  transition: border-color var(--t);
+  font-family: 'Outfit', sans-serif;
+}
+
+.filterSelect:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+.orderId {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.total {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.date {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.itemsList {
+  font-size: 12.5px;
+  color: var(--gray-600, var(--gray-500));
+  max-width: 220px;
+}
+
+.itemRow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Inline status form */
+.statusForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 200px;
+}
+
+.statusRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statusSelect {
+  padding: 6px 10px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  background: var(--white);
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+}
+
+.reasonInput {
+  padding: 6px 10px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
+}
+
+.reasonInput:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+.applyBtn {
+  padding: 6px 12px;
+  background: var(--blue);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  font-weight: 600;
+  transition: background var(--t);
+  white-space: nowrap;
+}
+
+.applyBtn:hover { background: var(--blue-dark); }
+.applyBtn:disabled { opacity: 0.5; cursor: not-allowed; }
