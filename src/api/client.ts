@@ -2,6 +2,7 @@ const BASE_URL = 'http://localhost:8000';
 const TOKEN_KEY = 'admin_token';
 
 export class ApiError extends Error {
+  // @ts-ignore
   constructor(public status: number, message: string) {
     super(message);
     this.name = 'ApiError';
